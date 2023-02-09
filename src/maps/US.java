@@ -9,8 +9,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import static java.lang.Integer.parseInt;
 import java.util.ArrayList;
-import java.util.Formatter;
-import java.util.List;
 import java.util.Scanner;
 import risk_game.Territory;
 
@@ -21,11 +19,9 @@ import risk_game.Territory;
 public final class US implements maps{
 
     private Scanner x;
-    private Formatter y;
-    public String wallpaper="Egypt_Map.png";
-    List<Territory> t_all = new ArrayList<Territory>();
+    public String wallpaper="resources/Us_Map.png";
+    ArrayList<Territory> ts = new ArrayList<>();
     int no_of_cities;
-    Territory ts[] =null;
     
     public US() throws FileNotFoundException {
         openfiletoread();
@@ -35,7 +31,7 @@ public final class US implements maps{
     
     @Override
     public void openfiletoread() throws FileNotFoundException {
-                x = new Scanner(new File("us.txt"));
+                x = new Scanner(new File("resources/us.txt"));
 
     }
 
@@ -48,15 +44,27 @@ public final class US implements maps{
             i++;
             String[] splitStr = x.nextLine().trim().split("\\s+");
             for (String splitStr1 : splitStr) {
-                this.ts[i].makechild(ts[parseInt(splitStr1)]);
+                this.ts.get(i).makechild(ts.get(parseInt(splitStr1)));
             }
-        }    }
+        }   }
 
     @Override
     public void maketerritories(int x) {
-         for (int i = 1; i <= no_of_cities; i++) {
-            this.ts[i] = new Territory(i);
+         this.ts.add(0, null);
+        for (int i = 1; i < x+1; i++) {
+            this.ts.add(i, new Territory(i));
         }
+    }
+
+
+    @Override
+    public ArrayList<Territory> getTerritories() {
+        return ts;
+    }
+
+    @Override
+    public String getwallpapper() {
+        return wallpaper;
     }
     
 }

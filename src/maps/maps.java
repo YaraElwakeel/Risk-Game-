@@ -6,6 +6,8 @@
 package maps;
 
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import risk_game.Territory;
 
 /**
  *
@@ -14,5 +16,7 @@ import java.io.FileNotFoundException;
 public interface maps {
      public void openfiletoread()throws FileNotFoundException ;
      public void readfromfile();
+     public String getwallpapper();
      public void maketerritories(int x);
+     public ArrayList<Territory> getTerritories(); 
 }

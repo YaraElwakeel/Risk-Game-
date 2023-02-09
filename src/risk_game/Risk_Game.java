@@ -5,10 +5,7 @@
  */
 package risk_game;
 
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import maps.Panel;
+import GUI.first;
 
 
 /**
@@ -21,13 +18,10 @@ public class Risk_Game {
      * @param args the command line arguments
      */
     public static void main(String[] args) {     
-         Panel panel = new Panel(
-         new ImageIcon("resources/wallpapper1.jpg").getImage());
-
-    JFrame frame = new JFrame();
-    frame.getContentPane().add(panel);
-    frame.pack();
-    frame.setVisible(true);
+         
+         
+        first frame = new first();
+         frame.setVisible(true);
   }
     }
     

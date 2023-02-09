@@ -18,21 +18,22 @@ import risk_game.Territory;
 public final class Egypt implements maps{
 
     private Scanner x;
+    private Scanner x1;
     private Formatter y;
-    public String wallpaper="Egypt_Map.png";
-    List<Territory> t_all = new ArrayList<Territory>();
+    public String wallpaper="resources/Egypt_Map.png";
+    ArrayList<Territory> ts = new ArrayList<>();
     int no_of_cities;
-    Territory ts[] =null;
 
     public Egypt() throws FileNotFoundException {
         openfiletoread();
         readfromfile();
+        
     }
 
     @Override
     public void openfiletoread() throws FileNotFoundException {
-        x = new Scanner(new File("egypt.txt"));
-
+        x = new Scanner(new File("resources/egypt.txt"));
+        x1= new Scanner(new File("resources/egypt coordinates.txt"));
     }
      @Override
     public void readfromfile() {
@@ -43,14 +44,30 @@ public final class Egypt implements maps{
             i++;
             String[] splitStr = x.nextLine().trim().split("\\s+");
             for (String splitStr1 : splitStr) {
-                this.ts[i].makechild(ts[parseInt(splitStr1)]);
-            }
+                this.ts.get(i).makechild(ts.get(parseInt(splitStr1)));
+            }   
         }
+        i=0;
+         while (x1.hasNextLine()) {
+            i++;
+            this.ts.get(i).setXcoordinate(x1.nextInt());
+            this.ts.get(i).setYcoordinate(x1.nextInt());
+         }
     }
      @Override
     public void maketerritories(int x){
-        for (int i = 1; i <= no_of_cities; i++) {
-            this.ts[i] = new Territory(i);
+        this.ts.add(0, null);
+        for (int i = 1; i < x+1; i++) {
+            this.ts.add(i, new Territory(i));
         }
+    }
+
+    @Override
+    public ArrayList<Territory> getTerritories() {
+        return  ts;
+    }
+    @Override
+    public String getwallpapper() {
+        return wallpaper;
     }
 }
