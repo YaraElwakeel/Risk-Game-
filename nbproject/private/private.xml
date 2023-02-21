@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/risk_game/Risk_Game.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/risk_game/Game.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/maps/maps.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/GUI/GamePanel.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/Agents/nonAI/pacifist.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/Agents/AI/clone.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/Agents/nonAI/Passive.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/maps/Egypt.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/Agents/AgentMaker.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/Agents/AI/Node.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/GUI/second3.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/Agents/AI/realtime.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/risk_game/Turn_manager.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/risk_game/Territory.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/risk_game/Player.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/Agents/nonAI/HumanAgent.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/Agents/AI/Gready.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/maps/US.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/Agents/nonAI/aggressive.java</file>
+            <file>file:/C:/Users/yarae/Documents/NetBeansProjects/Risk_Game/src/GUI/second.java</file>
+        </group>
+    </open-files>
+</project-private>
