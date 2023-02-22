@@ -20,6 +20,8 @@ For all players, the initial deployment of armies is done at random.
 2. A* search performed by a similar agent
 3. A real-time A* agent.
 4. A Minimax with beta-pruning agent.
-# pacifisist 
+![Screenshot 2023-02-21 213029](https://user-images.githubusercontent.com/66715310/220516115-fc5effc5-0653-4737-b076-2cec96553963.png)
+![Screenshot 2023-02-21 212901](https://user-images.githubusercontent.com/66715310/220516494-04d7d3f6-bc53-4179-8fa2-a9cd5cb1ad1f.png)
+![Screenshot 2023-02-21 213631](https://user-images.githubusercontent.com/66715310/220517095-172e900f-3923-47c2-b49e-10335de99127.png)
 
 
